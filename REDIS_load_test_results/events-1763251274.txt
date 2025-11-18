@@ -1,0 +1,11 @@
+LAST SEEN   TYPE      REASON              OBJECT                                          MESSAGE
+33m         Warning   FailedScheduling    pod/mongo-5dfcf95c47-mmwwg                      0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+1s          Normal    Scheduled           pod/relevance-scorer-cd555d678-6z2dc            Successfully assigned fraud-buster/relevance-scorer-cd555d678-6z2dc to minikube
+32m         Warning   FailedScheduling    pod/review-classifier-7cdcd474d8-7rzwp          0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+1s          Warning   FailedScheduling    pod/review-classifier-7cdcd474d8-dtr65          0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+2s          Normal    SuccessfulRescale   horizontalpodautoscaler/relevance-scorer-hpa    New size: 2; reason: cpu resource utilization (percentage of request) above target
+2s          Normal    ScalingReplicaSet   deployment/relevance-scorer                     Scaled up replica set relevance-scorer-cd555d678 from 1 to 2
+2s          Normal    SuccessfulRescale   horizontalpodautoscaler/review-classifier-hpa   New size: 2; reason: cpu resource utilization (percentage of request) above target
+2s          Normal    ScalingReplicaSet   deployment/review-classifier                    Scaled up replica set review-classifier-7cdcd474d8 from 1 to 2
+1s          Normal    SuccessfulCreate    replicaset/relevance-scorer-cd555d678           Created pod: relevance-scorer-cd555d678-6z2dc
+1s          Normal    SuccessfulCreate    replicaset/review-classifier-7cdcd474d8         Created pod: review-classifier-7cdcd474d8-dtr65

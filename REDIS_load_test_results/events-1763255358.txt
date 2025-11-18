@@ -1,0 +1,8 @@
+LAST SEEN   TYPE      REASON              OBJECT                                         MESSAGE
+9m11s       Warning   FailedScheduling    pod/mongo-5dfcf95c47-mmwwg                     0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+9m11s       Warning   FailedScheduling    pod/review-classifier-7cdcd474d8-7rzwp         0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+60m         Normal    Killing             pod/relevance-scorer-cd555d678-6z2dc           Stopping container relevance-scorer
+60m         Normal    SuccessfulDelete    replicaset/relevance-scorer-cd555d678          Deleted pod: relevance-scorer-cd555d678-6z2dc
+60m         Normal    SuccessfulDelete    replicaset/relevance-scorer-cd555d678          Deleted pod: relevance-scorer-cd555d678-zt7qd
+60m         Normal    SuccessfulRescale   horizontalpodautoscaler/relevance-scorer-hpa   New size: 1; reason: All metrics below target
+60m         Normal    ScalingReplicaSet   deployment/relevance-scorer                    Scaled down replica set relevance-scorer-cd555d678 from 3 to 1

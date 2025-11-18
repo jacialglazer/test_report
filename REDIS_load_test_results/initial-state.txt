@@ -1,0 +1,19 @@
+NAME                                                        REFERENCE                      TARGETS                        MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/flask-app-hpa           Deployment/flask-app           cpu: 9%/50%, memory: 22%/50%   2         8         2          3d11h
+horizontalpodautoscaler.autoscaling/mongo-store-hpa         Deployment/mongo-store         cpu: 4%/50%                    1         4         1          3d11h
+horizontalpodautoscaler.autoscaling/relevance-scorer-hpa    Deployment/relevance-scorer    cpu: 5%/50%                    1         4         1          3d11h
+horizontalpodautoscaler.autoscaling/review-classifier-hpa   Deployment/review-classifier   cpu: 0%/50%                    1         4         1          3d11h
+horizontalpodautoscaler.autoscaling/scraper-hpa             Deployment/scraper             cpu: 4%/50%                    1         4         1          3d11h
+
+NAME                                     READY   STATUS    RESTARTS       AGE
+pod/flask-app-5886b89967-4zgfn           1/1     Running   10 (20m ago)   32h
+pod/flask-app-5886b89967-s5sgc           1/1     Running   11 (20m ago)   32h
+pod/mongo-5cddd86795-v4s6n               1/1     Running   11 (20m ago)   3d11h
+pod/mongo-5dfcf95c47-mmwwg               0/1     Pending   0              3d7h
+pod/mongo-store-7fb479c547-z4bjn         1/1     Running   16 (20m ago)   3d7h
+pod/redis-6d9c5b88d4-zrwlg               1/1     Running   27 (20m ago)   3d7h
+pod/relevance-scorer-cd555d678-6tmdr     1/1     Running   3 (20m ago)    7h38m
+pod/review-classifier-7cdcd474d8-7rzwp   0/1     Pending   0              3d7h
+pod/review-classifier-85c4497458-ljdxf   1/1     Running   11 (20m ago)   3d11h
+pod/scheduler-6bbf94dcc-8hz2w            1/1     Running   19 (20m ago)   3d7h
+pod/scraper-548b7ddb9f-jssgw             1/1     Running   5 (20m ago)    24h

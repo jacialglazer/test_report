@@ -1,0 +1,10 @@
+LAST SEEN   TYPE      REASON             OBJECT                                   MESSAGE
+21m         Warning   FailedScheduling   pod/mongo-5dfcf95c47-mmwwg               0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+21m         Warning   FailedScheduling   pod/review-classifier-7cdcd474d8-7rzwp   0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+37s         Warning   Unhealthy          pod/flask-app-5886b89967-s5sgc           Readiness probe failed: Get "http://10.244.0.177:5000/health": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+36s         Warning   Unhealthy          pod/flask-app-5886b89967-4zgfn           Liveness probe failed: Get "http://10.244.0.170:5000/health": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+35s         Warning   Unhealthy          pod/flask-app-5886b89967-s5sgc           Liveness probe failed: Get "http://10.244.0.177:5000/health": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+31s         Warning   Unhealthy          pod/redis-6d9c5b88d4-zrwlg               Liveness probe failed: command timed out: "redis-cli ping" timed out after 5s
+30s         Warning   Unhealthy          pod/scheduler-6bbf94dcc-8hz2w            Liveness probe failed: command timed out: "python -c import sys; sys.exit(0)" timed out after 5s
+28s         Warning   Unhealthy          pod/redis-6d9c5b88d4-zrwlg               Readiness probe failed: command timed out: "redis-cli ping" timed out after 3s
+26s         Warning   Unhealthy          pod/scheduler-6bbf94dcc-8hz2w            Readiness probe failed: command timed out: "python -c import sys; sys.exit(0)" timed out after 3s

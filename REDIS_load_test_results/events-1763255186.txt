@@ -1,0 +1,13 @@
+LAST SEEN   TYPE      REASON              OBJECT                                          MESSAGE
+6m18s       Warning   FailedScheduling    pod/mongo-5dfcf95c47-mmwwg                      0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+58m         Warning   FailedScheduling    pod/relevance-scorer-cd555d678-zt7qd            0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+6m18s       Warning   FailedScheduling    pod/review-classifier-7cdcd474d8-7rzwp          0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+59m         Warning   FailedScheduling    pod/review-classifier-7cdcd474d8-dtr65          0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+58m         Normal    SuccessfulDelete    replicaset/review-classifier-7cdcd474d8         Deleted pod: review-classifier-7cdcd474d8-dtr65
+58m         Normal    SuccessfulRescale   horizontalpodautoscaler/review-classifier-hpa   New size: 1; reason: All metrics below target
+58m         Normal    ScalingReplicaSet   deployment/review-classifier                    Scaled down replica set review-classifier-7cdcd474d8 from 2 to 1
+57m         Normal    Killing             pod/relevance-scorer-cd555d678-6z2dc            Stopping container relevance-scorer
+57m         Normal    SuccessfulDelete    replicaset/relevance-scorer-cd555d678           Deleted pod: relevance-scorer-cd555d678-6z2dc
+57m         Normal    SuccessfulDelete    replicaset/relevance-scorer-cd555d678           Deleted pod: relevance-scorer-cd555d678-zt7qd
+57m         Normal    SuccessfulRescale   horizontalpodautoscaler/relevance-scorer-hpa    New size: 1; reason: All metrics below target
+57m         Normal    ScalingReplicaSet   deployment/relevance-scorer                     Scaled down replica set relevance-scorer-cd555d678 from 3 to 1

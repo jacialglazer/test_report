@@ -1,0 +1,49 @@
+LAST SEEN   TYPE      REASON              OBJECT                                          MESSAGE
+45m         Warning   FailedScheduling    pod/flask-app-5886b89967-mth6m                  0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+40m         Warning   FailedScheduling    pod/flask-app-5886b89967-mth6m                  0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+46m         Warning   FailedScheduling    pod/flask-app-5886b89967-c5z86                  0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+41m         Warning   FailedScheduling    pod/flask-app-5886b89967-c5z86                  0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+45m         Warning   FailedScheduling    pod/flask-app-5886b89967-jclvb                  0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+40m         Warning   FailedScheduling    pod/flask-app-5886b89967-jclvb                  0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+40m         Warning   FailedScheduling    pod/flask-app-5886b89967-994qg                  0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+46m         Warning   FailedScheduling    pod/flask-app-5886b89967-kttqg                  0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+45m         Warning   FailedScheduling    pod/flask-app-5886b89967-994qg                  0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+40m         Warning   FailedScheduling    pod/flask-app-5886b89967-kttqg                  0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+46m         Normal    Scheduled           pod/flask-app-5886b89967-sd6nr                  Successfully assigned fraud-buster/flask-app-5886b89967-sd6nr to minikube
+12m         Warning   FailedScheduling    pod/mongo-5dfcf95c47-mmwwg                      0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+12m         Warning   FailedScheduling    pod/review-classifier-7cdcd474d8-7rzwp          0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+60m         Normal    SuccessfulRescale   horizontalpodautoscaler/review-classifier-hpa   New size: 1; reason: All metrics below target
+60m         Normal    SuccessfulDelete    replicaset/review-classifier-7cdcd474d8         Deleted pod: review-classifier-7cdcd474d8-pfk4f
+60m         Normal    ScalingReplicaSet   deployment/review-classifier                    Scaled down replica set review-classifier-7cdcd474d8 from 2 to 1
+59m         Normal    SuccessfulRescale   horizontalpodautoscaler/relevance-scorer-hpa    New size: 1; reason: All metrics below target
+59m         Normal    ScalingReplicaSet   deployment/relevance-scorer                     Scaled down replica set relevance-scorer-cd555d678 from 3 to 1
+59m         Normal    Killing             pod/relevance-scorer-cd555d678-77xm6            Stopping container relevance-scorer
+59m         Normal    SuccessfulDelete    replicaset/relevance-scorer-cd555d678           Deleted pod: relevance-scorer-cd555d678-77xm6
+59m         Normal    SuccessfulDelete    replicaset/relevance-scorer-cd555d678           Deleted pod: relevance-scorer-cd555d678-lp5wf
+46m         Normal    SuccessfulCreate    replicaset/flask-app-5886b89967                 Created pod: flask-app-5886b89967-sd6nr
+46m         Normal    ScalingReplicaSet   deployment/flask-app                            Scaled up replica set flask-app-5886b89967 from 2 to 4
+46m         Normal    SuccessfulRescale   horizontalpodautoscaler/flask-app-hpa           New size: 4; reason: cpu resource utilization (percentage of request) above target
+46m         Normal    SuccessfulCreate    replicaset/flask-app-5886b89967                 Created pod: flask-app-5886b89967-c5z86
+46m         Normal    Pulling             pod/flask-app-5886b89967-sd6nr                  Pulling image "caffeinatedkong/flask-app:latest"
+46m         Normal    Pulled              pod/flask-app-5886b89967-sd6nr                  Successfully pulled image "caffeinatedkong/flask-app:latest" in 2.908s (2.908s including waiting). Image size: 749810154 bytes.
+46m         Normal    Created             pod/flask-app-5886b89967-sd6nr                  Created container: flask-app
+46m         Normal    Started             pod/flask-app-5886b89967-sd6nr                  Started container flask-app
+46m         Normal    SuccessfulRescale   horizontalpodautoscaler/flask-app-hpa           New size: 5; reason: cpu resource utilization (percentage of request) above target
+46m         Normal    ScalingReplicaSet   deployment/flask-app                            Scaled up replica set flask-app-5886b89967 from 4 to 5
+46m         Normal    SuccessfulCreate    replicaset/flask-app-5886b89967                 Created pod: flask-app-5886b89967-kttqg
+45m         Normal    SuccessfulCreate    replicaset/flask-app-5886b89967                 Created pod: flask-app-5886b89967-jclvb
+45m         Normal    SuccessfulRescale   horizontalpodautoscaler/flask-app-hpa           New size: 8; reason: cpu resource utilization (percentage of request) above target
+45m         Normal    SuccessfulCreate    replicaset/flask-app-5886b89967                 Created pod: flask-app-5886b89967-994qg
+45m         Normal    SuccessfulCreate    replicaset/flask-app-5886b89967                 Created pod: flask-app-5886b89967-mth6m
+45m         Normal    ScalingReplicaSet   deployment/flask-app                            Scaled up replica set flask-app-5886b89967 from 5 to 8
+39m         Normal    SuccessfulDelete    replicaset/flask-app-5886b89967                 Deleted pod: flask-app-5886b89967-994qg
+39m         Normal    ScalingReplicaSet   deployment/flask-app                            Scaled down replica set flask-app-5886b89967 from 8 to 4
+39m         Normal    SuccessfulRescale   horizontalpodautoscaler/flask-app-hpa           New size: 4; reason: All metrics below target
+39m         Normal    SuccessfulDelete    replicaset/flask-app-5886b89967                 Deleted pod: flask-app-5886b89967-c5z86
+39m         Normal    SuccessfulDelete    replicaset/flask-app-5886b89967                 Deleted pod: flask-app-5886b89967-mth6m
+39m         Normal    SuccessfulDelete    replicaset/flask-app-5886b89967                 Deleted pod: flask-app-5886b89967-kttqg
+38m         Normal    ScalingReplicaSet   deployment/flask-app                            Scaled down replica set flask-app-5886b89967 from 4 to 2
+38m         Normal    SuccessfulRescale   horizontalpodautoscaler/flask-app-hpa           New size: 2; reason: All metrics below target
+38m         Normal    SuccessfulDelete    replicaset/flask-app-5886b89967                 Deleted pod: flask-app-5886b89967-jclvb
+38m         Normal    SuccessfulDelete    replicaset/flask-app-5886b89967                 Deleted pod: flask-app-5886b89967-sd6nr
+38m         Normal    Killing             pod/flask-app-5886b89967-sd6nr                  Stopping container flask-app

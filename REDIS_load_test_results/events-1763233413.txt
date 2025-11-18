@@ -1,0 +1,8 @@
+LAST SEEN   TYPE      REASON              OBJECT                                   MESSAGE
+5m28s       Warning   FailedScheduling    pod/mongo-5dfcf95c47-mmwwg               0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+5m28s       Warning   FailedScheduling    pod/review-classifier-7cdcd474d8-7rzwp   0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+60m         Normal    Killing             pod/flask-app-5886b89967-sd6nr           Stopping container flask-app
+60m         Normal    SuccessfulDelete    replicaset/flask-app-5886b89967          Deleted pod: flask-app-5886b89967-sd6nr
+60m         Normal    SuccessfulDelete    replicaset/flask-app-5886b89967          Deleted pod: flask-app-5886b89967-jclvb
+60m         Normal    SuccessfulRescale   horizontalpodautoscaler/flask-app-hpa    New size: 2; reason: All metrics below target
+60m         Normal    ScalingReplicaSet   deployment/flask-app                     Scaled down replica set flask-app-5886b89967 from 4 to 2

@@ -1,0 +1,9 @@
+flask-app-5886b89967-4zgfn           8m     97Mi    
+flask-app-5886b89967-s5sgc           8m     76Mi    
+mongo-5cddd86795-v4s6n               21m    111Mi   
+mongo-store-7fb479c547-z4bjn         13m    35Mi    
+redis-6d9c5b88d4-zrwlg               15m    19Mi    
+relevance-scorer-cd555d678-6tmdr     251m   248Mi   
+review-classifier-85c4497458-ljdxf   764m   690Mi   
+scheduler-6bbf94dcc-8hz2w            34m    30Mi    
+scraper-548b7ddb9f-jssgw             33m    37Mi    

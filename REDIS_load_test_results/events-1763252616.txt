@@ -1,0 +1,32 @@
+LAST SEEN   TYPE      REASON              OBJECT                                          MESSAGE
+16m         Warning   FailedScheduling    pod/relevance-scorer-cd555d678-zt7qd            0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+22m         Normal    Scheduled           pod/relevance-scorer-cd555d678-6z2dc            Successfully assigned fraud-buster/relevance-scorer-cd555d678-6z2dc to minikube
+25m         Warning   FailedScheduling    pod/mongo-5dfcf95c47-mmwwg                      0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+17m         Warning   FailedScheduling    pod/review-classifier-7cdcd474d8-dtr65          0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+22m         Warning   FailedScheduling    pod/review-classifier-7cdcd474d8-dtr65          0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+25m         Warning   FailedScheduling    pod/review-classifier-7cdcd474d8-7rzwp          0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+21m         Warning   FailedScheduling    pod/relevance-scorer-cd555d678-zt7qd            0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+22m         Normal    ScalingReplicaSet   deployment/review-classifier                    Scaled up replica set review-classifier-7cdcd474d8 from 1 to 2
+22m         Normal    ScalingReplicaSet   deployment/relevance-scorer                     Scaled up replica set relevance-scorer-cd555d678 from 1 to 2
+22m         Normal    SuccessfulRescale   horizontalpodautoscaler/relevance-scorer-hpa    New size: 2; reason: cpu resource utilization (percentage of request) above target
+22m         Normal    SuccessfulRescale   horizontalpodautoscaler/review-classifier-hpa   New size: 2; reason: cpu resource utilization (percentage of request) above target
+22m         Normal    SuccessfulCreate    replicaset/relevance-scorer-cd555d678           Created pod: relevance-scorer-cd555d678-6z2dc
+22m         Normal    SuccessfulCreate    replicaset/review-classifier-7cdcd474d8         Created pod: review-classifier-7cdcd474d8-dtr65
+22m         Normal    Pulling             pod/relevance-scorer-cd555d678-6z2dc            Pulling image "caffeinatedkong/relevance-scorer:latest"
+22m         Normal    Created             pod/relevance-scorer-cd555d678-6z2dc            Created container: relevance-scorer
+22m         Normal    Pulled              pod/relevance-scorer-cd555d678-6z2dc            Successfully pulled image "caffeinatedkong/relevance-scorer:latest" in 2.745s (2.746s including waiting). Image size: 898174856 bytes.
+22m         Normal    Started             pod/relevance-scorer-cd555d678-6z2dc            Started container relevance-scorer
+21m         Warning   Unhealthy           pod/redis-6d9c5b88d4-zrwlg                      Readiness probe failed: command timed out: "redis-cli ping" timed out after 3s
+21m         Warning   Unhealthy           pod/relevance-scorer-cd555d678-6z2dc            Liveness probe failed: dial tcp 10.244.0.181:50052: connect: connection refused
+21m         Warning   Unhealthy           pod/relevance-scorer-cd555d678-6z2dc            Readiness probe failed: dial tcp 10.244.0.181:50052: connect: connection refused
+21m         Normal    SuccessfulRescale   horizontalpodautoscaler/relevance-scorer-hpa    New size: 3; reason: cpu resource utilization (percentage of request) above target
+21m         Normal    SuccessfulCreate    replicaset/relevance-scorer-cd555d678           Created pod: relevance-scorer-cd555d678-zt7qd
+21m         Normal    ScalingReplicaSet   deployment/relevance-scorer                     Scaled up replica set relevance-scorer-cd555d678 from 2 to 3
+15m         Normal    SuccessfulRescale   horizontalpodautoscaler/review-classifier-hpa   New size: 1; reason: All metrics below target
+15m         Normal    ScalingReplicaSet   deployment/review-classifier                    Scaled down replica set review-classifier-7cdcd474d8 from 2 to 1
+15m         Normal    SuccessfulDelete    replicaset/review-classifier-7cdcd474d8         Deleted pod: review-classifier-7cdcd474d8-dtr65
+14m         Normal    SuccessfulDelete    replicaset/relevance-scorer-cd555d678           Deleted pod: relevance-scorer-cd555d678-6z2dc
+14m         Normal    ScalingReplicaSet   deployment/relevance-scorer                     Scaled down replica set relevance-scorer-cd555d678 from 3 to 1
+14m         Normal    SuccessfulRescale   horizontalpodautoscaler/relevance-scorer-hpa    New size: 1; reason: All metrics below target
+14m         Normal    SuccessfulDelete    replicaset/relevance-scorer-cd555d678           Deleted pod: relevance-scorer-cd555d678-zt7qd
+14m         Normal    Killing             pod/relevance-scorer-cd555d678-6z2dc            Stopping container relevance-scorer

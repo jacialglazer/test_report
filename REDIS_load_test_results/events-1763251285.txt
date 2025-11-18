@@ -1,0 +1,15 @@
+LAST SEEN   TYPE      REASON              OBJECT                                          MESSAGE
+12s         Normal    Scheduled           pod/relevance-scorer-cd555d678-6z2dc            Successfully assigned fraud-buster/relevance-scorer-cd555d678-6z2dc to minikube
+13s         Warning   FailedScheduling    pod/review-classifier-7cdcd474d8-dtr65          0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+32m         Warning   FailedScheduling    pod/review-classifier-7cdcd474d8-7rzwp          0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+33m         Warning   FailedScheduling    pod/mongo-5dfcf95c47-mmwwg                      0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+14s         Normal    ScalingReplicaSet   deployment/relevance-scorer                     Scaled up replica set relevance-scorer-cd555d678 from 1 to 2
+14s         Normal    ScalingReplicaSet   deployment/review-classifier                    Scaled up replica set review-classifier-7cdcd474d8 from 1 to 2
+14s         Normal    SuccessfulRescale   horizontalpodautoscaler/review-classifier-hpa   New size: 2; reason: cpu resource utilization (percentage of request) above target
+14s         Normal    SuccessfulRescale   horizontalpodautoscaler/relevance-scorer-hpa    New size: 2; reason: cpu resource utilization (percentage of request) above target
+13s         Normal    SuccessfulCreate    replicaset/relevance-scorer-cd555d678           Created pod: relevance-scorer-cd555d678-6z2dc
+13s         Normal    SuccessfulCreate    replicaset/review-classifier-7cdcd474d8         Created pod: review-classifier-7cdcd474d8-dtr65
+10s         Normal    Pulling             pod/relevance-scorer-cd555d678-6z2dc            Pulling image "caffeinatedkong/relevance-scorer:latest"
+7s          Normal    Created             pod/relevance-scorer-cd555d678-6z2dc            Created container: relevance-scorer
+7s          Normal    Pulled              pod/relevance-scorer-cd555d678-6z2dc            Successfully pulled image "caffeinatedkong/relevance-scorer:latest" in 2.745s (2.746s including waiting). Image size: 898174856 bytes.
+6s          Normal    Started             pod/relevance-scorer-cd555d678-6z2dc            Started container relevance-scorer
