@@ -1,0 +1,17 @@
+NAME                                                        REFERENCE                      TARGETS        MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/flask-app-hpa           Deployment/flask-app           cpu: 3%/70%    2         8         2          18m
+horizontalpodautoscaler.autoscaling/mongo-store-hpa         Deployment/mongo-store         cpu: 1%/50%    1         4         1          18m
+horizontalpodautoscaler.autoscaling/relevance-scorer-hpa    Deployment/relevance-scorer    cpu: 26%/50%   1         4         1          18m
+horizontalpodautoscaler.autoscaling/review-classifier-hpa   Deployment/review-classifier   cpu: 13%/50%   1         4         1          18m
+horizontalpodautoscaler.autoscaling/scraper-hpa             Deployment/scraper             cpu: 1%/50%    1         4         1          18m
+
+NAME                                     READY   STATUS             RESTARTS      AGE
+pod/flask-app-69d4ccbdc9-bd42j           1/1     Running            0             18m
+pod/flask-app-69d4ccbdc9-hr2z9           1/1     Running            0             18m
+pod/mongo-5dfcf95c47-wjwj2               1/1     Running            0             18m
+pod/mongo-store-7fb479c547-fr6x2         1/1     Running            0             18m
+pod/redis-6d9c5b88d4-5zkwg               1/1     Running            0             18m
+pod/relevance-scorer-cd555d678-ql8zq     1/1     Running            0             18m
+pod/review-classifier-7cdcd474d8-pcsn6   1/1     Running            0             18m
+pod/scheduler-6bbf94dcc-tfcqq            0/1     CrashLoopBackOff   6 (72s ago)   18m
+pod/scraper-548b7ddb9f-g2v75             1/1     Running            0             18m

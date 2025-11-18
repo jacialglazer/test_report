@@ -1,0 +1,12 @@
+flask-app-69d4ccbdc9-bd42j           55m    195Mi   
+flask-app-69d4ccbdc9-hr2z9           47m    173Mi   
+mongo-5dfcf95c47-wjwj2               112m   96Mi    
+mongo-store-7fb479c547-fr6x2         5m     26Mi    
+redis-6d9c5b88d4-5zkwg               8m     11Mi    
+relevance-scorer-cd555d678-bkfn5     227m   363Mi   
+relevance-scorer-cd555d678-gcj4w     130m   340Mi   
+relevance-scorer-cd555d678-ql8zq     224m   337Mi   
+review-classifier-7cdcd474d8-5ptrw   233m   814Mi   
+review-classifier-7cdcd474d8-pcsn6   259m   647Mi   
+scheduler-6bbf94dcc-tfcqq            9m     20Mi    
+scraper-548b7ddb9f-g2v75             62m    41Mi    

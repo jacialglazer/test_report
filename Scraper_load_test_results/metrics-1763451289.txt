@@ -1,0 +1,8 @@
+flask-app-69d4ccbdc9-bd42j           4m    55Mi    
+flask-app-69d4ccbdc9-hr2z9           3m    55Mi    
+mongo-5dfcf95c47-wjwj2               88m   95Mi    
+mongo-store-7fb479c547-fr6x2         3m    26Mi    
+redis-6d9c5b88d4-5zkwg               7m    11Mi    
+relevance-scorer-cd555d678-ql8zq     65m   328Mi   
+review-classifier-7cdcd474d8-pcsn6   68m   618Mi   
+scraper-548b7ddb9f-g2v75             3m    28Mi    

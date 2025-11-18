@@ -1,0 +1,103 @@
+LAST SEEN   TYPE      REASON                         OBJECT                                          MESSAGE
+21m         Normal    ExternalProvisioning           persistentvolumeclaim/mongo-pvc                 Waiting for a volume to be created either by the external provisioner 'k8s.io/minikube-hostpath' or manually by the system administrator. If volume creation is delayed, please verify that the provisioner is running and correctly registered.
+21m         Normal    Pulling                        pod/flask-app-69d4ccbdc9-bd42j                  Pulling image "caffeinatedkong/flask-app:latest"
+21m         Normal    ScalingReplicaSet              deployment/scraper                              Scaled up replica set scraper-548b7ddb9f from 0 to 1
+21m         Normal    SuccessfulCreate               replicaset/scraper-548b7ddb9f                   Created pod: scraper-548b7ddb9f-g2v75
+21m         Normal    Pulling                        pod/scraper-548b7ddb9f-g2v75                    Pulling image "caffeinatedkong/scraper:latest"
+21m         Normal    Scheduled                      pod/flask-app-69d4ccbdc9-hr2z9                  Successfully assigned fraud-buster/flask-app-69d4ccbdc9-hr2z9 to minikube
+21m         Normal    Pulling                        pod/flask-app-69d4ccbdc9-hr2z9                  Pulling image "caffeinatedkong/flask-app:latest"
+21m         Normal    Scheduled                      pod/scraper-548b7ddb9f-g2v75                    Successfully assigned fraud-buster/scraper-548b7ddb9f-g2v75 to minikube
+21m         Normal    ScalingReplicaSet              deployment/scheduler                            Scaled up replica set scheduler-6bbf94dcc from 0 to 1
+21m         Normal    SuccessfulCreate               replicaset/scheduler-6bbf94dcc                  Created pod: scheduler-6bbf94dcc-tfcqq
+21m         Normal    SuccessfulCreate               replicaset/flask-app-69d4ccbdc9                 Created pod: flask-app-69d4ccbdc9-bd42j
+21m         Normal    SuccessfulCreate               replicaset/flask-app-69d4ccbdc9                 Created pod: flask-app-69d4ccbdc9-hr2z9
+21m         Normal    Scheduled                      pod/scheduler-6bbf94dcc-tfcqq                   Successfully assigned fraud-buster/scheduler-6bbf94dcc-tfcqq to minikube
+21m         Normal    ScalingReplicaSet              deployment/review-classifier                    Scaled up replica set review-classifier-7cdcd474d8 from 0 to 1
+21m         Normal    ScalingReplicaSet              deployment/flask-app                            Scaled up replica set flask-app-69d4ccbdc9 from 0 to 2
+21m         Normal    Pulling                        pod/relevance-scorer-cd555d678-ql8zq            Pulling image "caffeinatedkong/relevance-scorer:latest"
+21m         Normal    Scheduled                      pod/mongo-5dfcf95c47-wjwj2                      Successfully assigned fraud-buster/mongo-5dfcf95c47-wjwj2 to minikube
+21m         Normal    Pulling                        pod/mongo-5dfcf95c47-wjwj2                      Pulling image "mongo:7"
+21m         Normal    SuccessfulCreate               replicaset/relevance-scorer-cd555d678           Created pod: relevance-scorer-cd555d678-ql8zq
+21m         Normal    ScalingReplicaSet              deployment/redis                                Scaled up replica set redis-6d9c5b88d4 from 0 to 1
+21m         Normal    Scheduled                      pod/relevance-scorer-cd555d678-ql8zq            Successfully assigned fraud-buster/relevance-scorer-cd555d678-ql8zq to minikube
+21m         Normal    SuccessfulCreate               replicaset/redis-6d9c5b88d4                     Created pod: redis-6d9c5b88d4-5zkwg
+21m         Normal    SuccessfulCreate               replicaset/mongo-5dfcf95c47                     Created pod: mongo-5dfcf95c47-wjwj2
+21m         Normal    Provisioning                   persistentvolumeclaim/mongo-pvc                 External provisioner is provisioning volume for claim "fraud-buster/mongo-pvc"
+21m         Normal    ProvisioningSucceeded          persistentvolumeclaim/mongo-pvc                 Successfully provisioned volume pvc-eea93947-9e27-41dc-9117-3d2920ed6d99
+21m         Normal    Scheduled                      pod/mongo-store-7fb479c547-fr6x2                Successfully assigned fraud-buster/mongo-store-7fb479c547-fr6x2 to minikube
+21m         Normal    Pulling                        pod/mongo-store-7fb479c547-fr6x2                Pulling image "caffeinatedkong/mongo-store:latest"
+21m         Normal    Scheduled                      pod/flask-app-69d4ccbdc9-bd42j                  Successfully assigned fraud-buster/flask-app-69d4ccbdc9-bd42j to minikube
+21m         Normal    SuccessfulCreate               replicaset/review-classifier-7cdcd474d8         Created pod: review-classifier-7cdcd474d8-pcsn6
+21m         Normal    Pulling                        pod/review-classifier-7cdcd474d8-pcsn6          Pulling image "caffeinatedkong/review-classifier:latest"
+21m         Normal    SuccessfulCreate               replicaset/mongo-store-7fb479c547               Created pod: mongo-store-7fb479c547-fr6x2
+21m         Normal    Scheduled                      pod/review-classifier-7cdcd474d8-pcsn6          Successfully assigned fraud-buster/review-classifier-7cdcd474d8-pcsn6 to minikube
+21m         Normal    ScalingReplicaSet              deployment/relevance-scorer                     Scaled up replica set relevance-scorer-cd555d678 from 0 to 1
+21m         Normal    ScalingReplicaSet              deployment/mongo-store                          Scaled up replica set mongo-store-7fb479c547 from 0 to 1
+21m         Normal    ScalingReplicaSet              deployment/mongo                                Scaled up replica set mongo-5dfcf95c47 from 0 to 1
+21m         Normal    Scheduled                      pod/redis-6d9c5b88d4-5zkwg                      Successfully assigned fraud-buster/redis-6d9c5b88d4-5zkwg to minikube
+21m         Normal    Pulling                        pod/redis-6d9c5b88d4-5zkwg                      Pulling image "redis:latest"
+20m         Normal    Sync                           ingress/fraud-buster-ingress                    Scheduled for sync
+20m         Normal    Started                        pod/mongo-5dfcf95c47-wjwj2                      Started container mongo
+20m         Normal    Created                        pod/mongo-5dfcf95c47-wjwj2                      Created container: mongo
+20m         Normal    Pulled                         pod/mongo-5dfcf95c47-wjwj2                      Successfully pulled image "mongo:7" in 48.607s (48.607s including waiting). Image size: 790783467 bytes.
+20m         Normal    Pulled                         pod/redis-6d9c5b88d4-5zkwg                      Successfully pulled image "redis:latest" in 14.626s (1m3.229s including waiting). Image size: 159156318 bytes.
+20m         Normal    Created                        pod/redis-6d9c5b88d4-5zkwg                      Created container: redis
+20m         Normal    Started                        pod/redis-6d9c5b88d4-5zkwg                      Started container redis
+18m         Warning   FailedComputeMetricsReplicas   horizontalpodautoscaler/review-classifier-hpa   invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
+18m         Warning   FailedComputeMetricsReplicas   horizontalpodautoscaler/flask-app-hpa           invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
+18m         Warning   FailedComputeMetricsReplicas   horizontalpodautoscaler/scraper-hpa             invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
+18m         Warning   FailedComputeMetricsReplicas   horizontalpodautoscaler/mongo-store-hpa         invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
+18m         Warning   FailedComputeMetricsReplicas   horizontalpodautoscaler/relevance-scorer-hpa    invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
+18m         Normal    Started                        pod/review-classifier-7cdcd474d8-pcsn6          Started container review-classifier
+18m         Normal    Pulled                         pod/review-classifier-7cdcd474d8-pcsn6          Successfully pulled image "caffeinatedkong/review-classifier:latest" in 1m57.873s (3m1.084s including waiting). Image size: 1611534636 bytes.
+18m         Normal    Created                        pod/review-classifier-7cdcd474d8-pcsn6          Created container: review-classifier
+18m         Warning   FailedGetResourceMetric        horizontalpodautoscaler/scraper-hpa             failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
+18m         Warning   FailedGetResourceMetric        horizontalpodautoscaler/mongo-store-hpa         failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
+18m         Warning   FailedGetResourceMetric        horizontalpodautoscaler/review-classifier-hpa   failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
+18m         Normal    Pulled                         pod/mongo-store-7fb479c547-fr6x2                Successfully pulled image "caffeinatedkong/mongo-store:latest" in 33.935s (3m34.997s including waiting). Image size: 529420968 bytes.
+18m         Normal    Created                        pod/mongo-store-7fb479c547-fr6x2                Created container: mongo-store
+18m         Normal    Started                        pod/mongo-store-7fb479c547-fr6x2                Started container mongo-store
+17m         Normal    Created                        pod/scraper-548b7ddb9f-g2v75                    Created container: scraper
+17m         Normal    Pulled                         pod/scraper-548b7ddb9f-g2v75                    Successfully pulled image "caffeinatedkong/scraper:latest" in 11.662s (3m46.655s including waiting). Image size: 533460755 bytes.
+17m         Normal    Started                        pod/scraper-548b7ddb9f-g2v75                    Started container scraper
+17m         Normal    Started                        pod/relevance-scorer-cd555d678-ql8zq            Started container relevance-scorer
+17m         Normal    Created                        pod/relevance-scorer-cd555d678-ql8zq            Created container: relevance-scorer
+17m         Normal    Pulled                         pod/relevance-scorer-cd555d678-ql8zq            Successfully pulled image "caffeinatedkong/relevance-scorer:latest" in 28.543s (4m15.197s including waiting). Image size: 893276553 bytes.
+17m         Normal    Pulled                         pod/scheduler-6bbf94dcc-tfcqq                   Successfully pulled image "caffeinatedkong/scheduler:latest" in 16.068s (4m31.113s including waiting). Image size: 496674154 bytes.
+17m         Warning   Unhealthy                      pod/relevance-scorer-cd555d678-ql8zq            Readiness probe failed: dial tcp 10.244.0.13:50052: connect: connection refused
+16m         Normal    Started                        pod/flask-app-69d4ccbdc9-bd42j                  Started container flask-app
+16m         Normal    Created                        pod/flask-app-69d4ccbdc9-bd42j                  Created container: flask-app
+16m         Normal    Pulled                         pod/flask-app-69d4ccbdc9-bd42j                  Successfully pulled image "caffeinatedkong/flask-app:latest" in 20.351s (4m51.337s including waiting). Image size: 747270646 bytes.
+16m         Normal    Started                        pod/flask-app-69d4ccbdc9-hr2z9                  Started container flask-app
+16m         Normal    Created                        pod/flask-app-69d4ccbdc9-hr2z9                  Created container: flask-app
+16m         Normal    Pulled                         pod/flask-app-69d4ccbdc9-hr2z9                  Successfully pulled image "caffeinatedkong/flask-app:latest" in 2.356s (4m53.596s including waiting). Image size: 747270646 bytes.
+16m         Warning   FailedGetResourceMetric        horizontalpodautoscaler/relevance-scorer-hpa    failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
+16m         Warning   FailedGetResourceMetric        horizontalpodautoscaler/flask-app-hpa           failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
+15m         Normal    Pulled                         pod/scheduler-6bbf94dcc-tfcqq                   Successfully pulled image "caffeinatedkong/scheduler:latest" in 2.533s (2.533s including waiting). Image size: 496674154 bytes.
+14m         Normal    Pulled                         pod/scheduler-6bbf94dcc-tfcqq                   Successfully pulled image "caffeinatedkong/scheduler:latest" in 3.78s (3.78s including waiting). Image size: 496674154 bytes.
+13m         Warning   Unhealthy                      pod/scheduler-6bbf94dcc-tfcqq                   Readiness probe errored and resulted in unknown state: rpc error: code = Unknown desc = container not running (d0e70af1bc6dbcc1372cc2f9971d3afd3624ee5f77a1604f1e5e1ba919c7f3e8)
+13m         Normal    Pulled                         pod/scheduler-6bbf94dcc-tfcqq                   Successfully pulled image "caffeinatedkong/scheduler:latest" in 2.627s (2.627s including waiting). Image size: 496674154 bytes.
+11m         Normal    Pulled                         pod/scheduler-6bbf94dcc-tfcqq                   Successfully pulled image "caffeinatedkong/scheduler:latest" in 2.525s (2.525s including waiting). Image size: 496674154 bytes.
+9m3s        Normal    Started                        pod/scheduler-6bbf94dcc-tfcqq                   Started container scheduler
+9m3s        Normal    Pulled                         pod/scheduler-6bbf94dcc-tfcqq                   Successfully pulled image "caffeinatedkong/scheduler:latest" in 3.303s (3.303s including waiting). Image size: 496674154 bytes.
+4m56s       Normal    Pulling                        pod/scheduler-6bbf94dcc-tfcqq                   Pulling image "caffeinatedkong/scheduler:latest"
+4m53s       Normal    Pulled                         pod/scheduler-6bbf94dcc-tfcqq                   Successfully pulled image "caffeinatedkong/scheduler:latest" in 2.528s (2.528s including waiting). Image size: 496674154 bytes.
+4m53s       Normal    Created                        pod/scheduler-6bbf94dcc-tfcqq                   Created container: scheduler
+2m8s        Warning   BackOff                        pod/scheduler-6bbf94dcc-tfcqq                   Back-off restarting failed container scheduler in pod scheduler-6bbf94dcc-tfcqq_fraud-buster(ea428ab5-51e9-425c-94d3-d068d1a72575)
+83s         Normal    Scheduled                      pod/review-classifier-7cdcd474d8-5ptrw          Successfully assigned fraud-buster/review-classifier-7cdcd474d8-5ptrw to minikube
+83s         Normal    ScalingReplicaSet              deployment/relevance-scorer                     Scaled up replica set relevance-scorer-cd555d678 from 1 to 2
+83s         Normal    Pulling                        pod/relevance-scorer-cd555d678-bkfn5            Pulling image "caffeinatedkong/relevance-scorer:latest"
+83s         Normal    ScalingReplicaSet              deployment/review-classifier                    Scaled up replica set review-classifier-7cdcd474d8 from 1 to 2
+83s         Normal    SuccessfulCreate               replicaset/review-classifier-7cdcd474d8         Created pod: review-classifier-7cdcd474d8-5ptrw
+83s         Normal    SuccessfulRescale              horizontalpodautoscaler/review-classifier-hpa   New size: 2; reason: cpu resource utilization (percentage of request) above target
+83s         Normal    Scheduled                      pod/relevance-scorer-cd555d678-bkfn5            Successfully assigned fraud-buster/relevance-scorer-cd555d678-bkfn5 to minikube
+83s         Normal    Pulling                        pod/review-classifier-7cdcd474d8-5ptrw          Pulling image "caffeinatedkong/review-classifier:latest"
+83s         Normal    SuccessfulCreate               replicaset/relevance-scorer-cd555d678           Created pod: relevance-scorer-cd555d678-bkfn5
+83s         Normal    SuccessfulRescale              horizontalpodautoscaler/relevance-scorer-hpa    New size: 2; reason: cpu resource utilization (percentage of request) above target
+80s         Normal    Created                        pod/relevance-scorer-cd555d678-bkfn5            Created container: relevance-scorer
+80s         Normal    Pulled                         pod/relevance-scorer-cd555d678-bkfn5            Successfully pulled image "caffeinatedkong/relevance-scorer:latest" in 2.961s (2.961s including waiting). Image size: 893276553 bytes.
+80s         Normal    Started                        pod/relevance-scorer-cd555d678-bkfn5            Started container relevance-scorer
+78s         Normal    Started                        pod/review-classifier-7cdcd474d8-5ptrw          Started container review-classifier
+78s         Normal    Created                        pod/review-classifier-7cdcd474d8-5ptrw          Created container: review-classifier
+78s         Normal    Pulled                         pod/review-classifier-7cdcd474d8-5ptrw          Successfully pulled image "caffeinatedkong/review-classifier:latest" in 2.422s (5.383s including waiting). Image size: 1611534636 bytes.
+63s         Warning   Unhealthy                      pod/relevance-scorer-cd555d678-bkfn5            Readiness probe failed: dial tcp 10.244.0.18:50052: connect: connection refused
