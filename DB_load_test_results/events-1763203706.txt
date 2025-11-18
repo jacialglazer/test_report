@@ -1,0 +1,212 @@
+LAST SEEN   TYPE      REASON                         OBJECT                                          MESSAGE
+31m         Warning   FailedScheduling               pod/flask-app-5886b89967-g67j6                  0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+101s        Warning   FailedScheduling               pod/flask-app-5886b89967-zz5lt                  0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+2m11s       Warning   FailedScheduling               pod/flask-app-5886b89967-m48x2                  0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+101s        Warning   FailedScheduling               pod/flask-app-5886b89967-kc2nn                  0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+101s        Warning   FailedScheduling               pod/flask-app-5886b89967-vsfhc                  0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+2m53s       Warning   FailedScheduling               pod/review-classifier-7cdcd474d8-7rzwp          0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+32m         Warning   FailedScheduling               pod/review-classifier-7cdcd474d8-7rzwp          0/1 nodes are available: 1 node(s) had untolerated taint {node.kubernetes.io/not-ready: }. no new claims to deallocate, preemption: 0/1 nodes are available: 1 Preemption is not helpful for scheduling.
+31m         Warning   FailedScheduling               pod/relevance-scorer-cd555d678-cbbgx            0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+30m         Normal    Scheduled                      pod/flask-app-5886b89967-g67j6                  Successfully assigned fraud-buster/flask-app-5886b89967-g67j6 to minikube
+2m11s       Normal    Scheduled                      pod/flask-app-5886b89967-gs9rc                  Successfully assigned fraud-buster/flask-app-5886b89967-gs9rc to minikube
+2m53s       Warning   FailedScheduling               pod/mongo-5dfcf95c47-mmwwg                      0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+31m         Warning   FailedScheduling               pod/flask-app-5886b89967-9qtnw                  0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+31m         Warning   FailedScheduling               pod/scraper-548b7ddb9f-4j7v6                    0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+101s        Warning   FailedScheduling               pod/flask-app-5886b89967-vdv68                  0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+32m         Warning   FailedScheduling               pod/mongo-5dfcf95c47-mmwwg                      0/1 nodes are available: 1 node(s) had untolerated taint {node.kubernetes.io/not-ready: }. no new claims to deallocate, preemption: 0/1 nodes are available: 1 Preemption is not helpful for scheduling.
+11s         Warning   FailedScheduling               pod/mongo-store-7fb479c547-gtm82                0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+2m11s       Warning   FailedScheduling               pod/mongo-store-7fb479c547-4t94z                0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+58m         Warning   Failed                         pod/redis-6d9c5b88d4-zrwlg                      Error: context deadline exceeded
+58m         Warning   Unhealthy                      pod/redis-6d9c5b88d4-zrwlg                      Readiness probe errored and resulted in unknown state: rpc error: code = Unknown desc = container not running (3abae06ada829d6e1f81ddd101001ebeb8fb7fb54cd99e2ac62fc76cc2033f65)
+58m         Warning   Unhealthy                      pod/scheduler-6bbf94dcc-8hz2w                   Readiness probe failed: FailedPrecondition: container c1b92d3b812a4d43a7ceb2b5053368de2244da2b94d051b4a0e01f8f50882dbb init process is not running: failed precondition
+58m         Warning   Unhealthy                      pod/scheduler-6bbf94dcc-8hz2w                   Readiness probe errored and resulted in unknown state: rpc error: code = Unknown desc = container not running (c1b92d3b812a4d43a7ceb2b5053368de2244da2b94d051b4a0e01f8f50882dbb)
+58m         Warning   Unhealthy                      pod/redis-6d9c5b88d4-zrwlg                      Readiness probe failed: Could not connect to Redis at 127.0.0.1:6379: Connection refused
+58m         Normal    Pulled                         pod/scheduler-6bbf94dcc-8hz2w                   Successfully pulled image "caffeinatedkong/scheduler:latest" in 3.078s (3.078s including waiting). Image size: 487939183 bytes.
+42m         Warning   NodeNotReady                   pod/redis-6d9c5b88d4-zrwlg                      Node is not ready
+41m         Warning   FailedComputeMetricsReplicas   horizontalpodautoscaler/flask-app-hpa           invalid metrics (2 invalid out of 2), first error is: failed to get cpu resource metric value: failed to get cpu utilization: unable to get metrics for resource cpu: unable to fetch metrics from resource metrics API: the server is currently unable to handle the request (get pods.metrics.k8s.io)
+41m         Warning   FailedGetResourceMetric        horizontalpodautoscaler/flask-app-hpa           failed to get memory utilization: unable to get metrics for resource memory: unable to fetch metrics from resource metrics API: the server is currently unable to handle the request (get pods.metrics.k8s.io)
+41m         Warning   Unhealthy                      pod/redis-6d9c5b88d4-zrwlg                      Liveness probe failed: command timed out: "redis-cli ping" timed out after 5s
+41m         Warning   Unhealthy                      pod/redis-6d9c5b88d4-zrwlg                      Readiness probe failed: command timed out: "redis-cli ping" timed out after 3s
+41m         Normal    Killing                        pod/redis-6d9c5b88d4-zrwlg                      Container redis failed liveness probe, will be restarted
+41m         Warning   Unhealthy                      pod/redis-6d9c5b88d4-zrwlg                      Readiness probe failed:
+41m         Normal    Pulled                         pod/redis-6d9c5b88d4-zrwlg                      Successfully pulled image "redis:latest" in 3.281s (3.281s including waiting). Image size: 137229198 bytes.
+34m         Warning   Unhealthy                      pod/scheduler-6bbf94dcc-8hz2w                   Liveness probe failed: command timed out: "python -c import sys; sys.exit(0)" timed out after 5s
+34m         Warning   Unhealthy                      pod/redis-6d9c5b88d4-zrwlg                      Readiness probe errored and resulted in unknown state: rpc error: code = Unknown desc = container not running (92f00eb4cbfa57e7c2ca2fb94789305fde863ac6394f22478942640a52c398d0)
+34m         Warning   FailedMount                    pod/review-classifier-85c4497458-ljdxf          MountVolume.SetUp failed for volume "kube-api-access-s7vj9" : failed to sync configmap cache: timed out waiting for the condition
+34m         Warning   FailedMount                    pod/scraper-548b7ddb9f-jssgw                    MountVolume.SetUp failed for volume "kube-api-access-w2c9d" : failed to sync configmap cache: timed out waiting for the condition
+34m         Warning   FailedMount                    pod/flask-app-5886b89967-s5sgc                  MountVolume.SetUp failed for volume "kube-api-access-pxlf8" : failed to sync configmap cache: timed out waiting for the condition
+34m         Warning   FailedMount                    pod/mongo-store-7fb479c547-z4bjn                MountVolume.SetUp failed for volume "kube-api-access-m7bbd" : failed to sync configmap cache: timed out waiting for the condition
+34m         Warning   FailedMount                    pod/relevance-scorer-cd555d678-gww9t            MountVolume.SetUp failed for volume "kube-api-access-vdgbf" : failed to sync configmap cache: timed out waiting for the condition
+34m         Warning   FailedMount                    pod/scheduler-6bbf94dcc-8hz2w                   MountVolume.SetUp failed for volume "kube-api-access-6jg55" : failed to sync configmap cache: timed out waiting for the condition
+34m         Warning   FailedMount                    pod/flask-app-5886b89967-4zgfn                  MountVolume.SetUp failed for volume "kube-api-access-t77f5" : failed to sync configmap cache: timed out waiting for the condition
+34m         Normal    Sync                           ingress/fraud-buster-ingress                    Scheduled for sync
+34m         Warning   FailedGetResourceMetric        horizontalpodautoscaler/flask-app-hpa           failed to get cpu utilization: unable to get metrics for resource cpu: unable to fetch metrics from resource metrics API: the server is currently unable to handle the request (get pods.metrics.k8s.io)
+34m         Warning   NodeNotReady                   pod/mongo-5cddd86795-v4s6n                      Node is not ready
+34m         Warning   Unhealthy                      pod/scheduler-6bbf94dcc-8hz2w                   Readiness probe failed: command timed out: "python -c import sys; sys.exit(0)" timed out after 3s
+34m         Warning   NodeNotReady                   pod/flask-app-5886b89967-s5sgc                  Node is not ready
+34m         Warning   NodeNotReady                   pod/scraper-548b7ddb9f-jssgw                    Node is not ready
+34m         Warning   FailedScheduling               pod/mongo-5dfcf95c47-mmwwg                      0/1 nodes are available: 1 node(s) had untolerated taint {node.kubernetes.io/unreachable: }. no new claims to deallocate, preemption: 0/1 nodes are available: 1 Preemption is not helpful for scheduling.
+34m         Warning   NodeNotReady                   pod/mongo-store-7fb479c547-z4bjn                Node is not ready
+34m         Warning   NodeNotReady                   pod/relevance-scorer-cd555d678-gww9t            Node is not ready
+34m         Warning   FailedScheduling               pod/review-classifier-7cdcd474d8-7rzwp          0/1 nodes are available: 1 node(s) had untolerated taint {node.kubernetes.io/unreachable: }. no new claims to deallocate, preemption: 0/1 nodes are available: 1 Preemption is not helpful for scheduling.
+34m         Warning   NodeNotReady                   pod/flask-app-5886b89967-4zgfn                  Node is not ready
+34m         Warning   NodeNotReady                   pod/scheduler-6bbf94dcc-8hz2w                   Node is not ready
+34m         Warning   NodeNotReady                   pod/review-classifier-85c4497458-ljdxf          Node is not ready
+34m         Normal    Killing                        pod/scheduler-6bbf94dcc-8hz2w                   Container scheduler failed liveness probe, will be restarted
+34m         Normal    TaintManagerEviction           pod/flask-app-5886b89967-4zgfn                  Cancelling deletion of Pod fraud-buster/flask-app-5886b89967-4zgfn
+34m         Normal    TaintManagerEviction           pod/mongo-store-7fb479c547-z4bjn                Cancelling deletion of Pod fraud-buster/mongo-store-7fb479c547-z4bjn
+34m         Normal    TaintManagerEviction           pod/review-classifier-85c4497458-ljdxf          Cancelling deletion of Pod fraud-buster/review-classifier-85c4497458-ljdxf
+34m         Normal    TaintManagerEviction           pod/flask-app-5886b89967-s5sgc                  Cancelling deletion of Pod fraud-buster/flask-app-5886b89967-s5sgc
+34m         Warning   FailedScheduling               pod/mongo-5dfcf95c47-mmwwg                      0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+34m         Normal    TaintManagerEviction           pod/scheduler-6bbf94dcc-8hz2w                   Cancelling deletion of Pod fraud-buster/scheduler-6bbf94dcc-8hz2w
+34m         Normal    TaintManagerEviction           pod/mongo-5cddd86795-v4s6n                      Cancelling deletion of Pod fraud-buster/mongo-5cddd86795-v4s6n
+34m         Normal    TaintManagerEviction           pod/scraper-548b7ddb9f-jssgw                    Cancelling deletion of Pod fraud-buster/scraper-548b7ddb9f-jssgw
+34m         Normal    TaintManagerEviction           pod/relevance-scorer-cd555d678-gww9t            Cancelling deletion of Pod fraud-buster/relevance-scorer-cd555d678-gww9t
+34m         Warning   FailedScheduling               pod/review-classifier-7cdcd474d8-7rzwp          0/1 nodes are available: 1 Insufficient memory. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+34m         Normal    TaintManagerEviction           pod/redis-6d9c5b88d4-zrwlg                      Cancelling deletion of Pod fraud-buster/redis-6d9c5b88d4-zrwlg
+34m         Warning   Unhealthy                      pod/scheduler-6bbf94dcc-8hz2w                   Readiness probe failed:
+34m         Normal    Pulled                         pod/scheduler-6bbf94dcc-8hz2w                   Successfully pulled image "caffeinatedkong/scheduler:latest" in 2.708s (2.708s including waiting). Image size: 487939183 bytes.
+34m         Warning   FailedComputeMetricsReplicas   horizontalpodautoscaler/mongo-store-hpa         invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: unable to get metrics for resource cpu: unable to fetch metrics from resource metrics API: the server is currently unable to handle the request (get pods.metrics.k8s.io)
+34m         Warning   FailedComputeMetricsReplicas   horizontalpodautoscaler/relevance-scorer-hpa    invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: unable to get metrics for resource cpu: unable to fetch metrics from resource metrics API: the server is currently unable to handle the request (get pods.metrics.k8s.io)
+34m         Warning   FailedComputeMetricsReplicas   horizontalpodautoscaler/review-classifier-hpa   invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: unable to get metrics for resource cpu: unable to fetch metrics from resource metrics API: the server is currently unable to handle the request (get pods.metrics.k8s.io)
+34m         Warning   FailedComputeMetricsReplicas   horizontalpodautoscaler/scraper-hpa             invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: unable to get metrics for resource cpu: unable to fetch metrics from resource metrics API: the server is currently unable to handle the request (get pods.metrics.k8s.io)
+33m         Warning   FailedGetResourceMetric        horizontalpodautoscaler/mongo-store-hpa         failed to get cpu utilization: unable to get metrics for resource cpu: unable to fetch metrics from resource metrics API: the server is currently unable to handle the request (get pods.metrics.k8s.io)
+33m         Warning   FailedGetResourceMetric        horizontalpodautoscaler/review-classifier-hpa   failed to get cpu utilization: unable to get metrics for resource cpu: unable to fetch metrics from resource metrics API: the server is currently unable to handle the request (get pods.metrics.k8s.io)
+33m         Warning   FailedGetResourceMetric        horizontalpodautoscaler/relevance-scorer-hpa    failed to get cpu utilization: unable to get metrics for resource cpu: unable to fetch metrics from resource metrics API: the server is currently unable to handle the request (get pods.metrics.k8s.io)
+33m         Warning   FailedGetResourceMetric        horizontalpodautoscaler/scraper-hpa             failed to get cpu utilization: unable to get metrics for resource cpu: unable to fetch metrics from resource metrics API: the server is currently unable to handle the request (get pods.metrics.k8s.io)
+33m         Normal    SuccessfulRescale              horizontalpodautoscaler/relevance-scorer-hpa    New size: 2; reason: cpu resource utilization (percentage of request) above target
+33m         Normal    Scheduled                      pod/relevance-scorer-cd555d678-6tmdr            Successfully assigned fraud-buster/relevance-scorer-cd555d678-6tmdr to minikube
+33m         Normal    ScalingReplicaSet              deployment/relevance-scorer                     Scaled up replica set relevance-scorer-cd555d678 from 1 to 2
+33m         Normal    SuccessfulCreate               replicaset/relevance-scorer-cd555d678           Created pod: relevance-scorer-cd555d678-6tmdr
+33m         Warning   FailedCreatePodSandBox         pod/relevance-scorer-cd555d678-6tmdr            Failed to create pod sandbox: rpc error: code = Unknown desc = failed to inspect sandbox image "registry.k8s.io/pause:3.10.1": Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
+33m         Warning   FailedScheduling               pod/mongo-5dfcf95c47-mmwwg                      0/1 nodes are available: 1 node(s) had untolerated taint {node.kubernetes.io/not-ready: }. no new claims to deallocate, preemption: 0/1 nodes are available: 1 Preemption is not helpful for scheduling.
+33m         Warning   FailedScheduling               pod/review-classifier-7cdcd474d8-7rzwp          0/1 nodes are available: 1 node(s) had untolerated taint {node.kubernetes.io/not-ready: }. no new claims to deallocate, preemption: 0/1 nodes are available: 1 Preemption is not helpful for scheduling.
+33m         Warning   Unhealthy                      pod/scheduler-6bbf94dcc-8hz2w                   Liveness probe errored and resulted in unknown state: rpc error: code = Unknown desc = Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
+33m         Warning   Unhealthy                      pod/scheduler-6bbf94dcc-8hz2w                   Readiness probe errored and resulted in unknown state: rpc error: code = Unknown desc = Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
+33m         Warning   Unhealthy                      pod/flask-app-5886b89967-4zgfn                  Liveness probe failed: Get "http://10.244.0.127:5000/health": read tcp 10.244.0.1:43682->10.244.0.127:5000: read: connection reset by peer
+33m         Warning   Unhealthy                      pod/flask-app-5886b89967-s5sgc                  Liveness probe failed: Get "http://10.244.0.130:5000/health": dial tcp 10.244.0.130:5000: connect: connection refused
+33m         Warning   Unhealthy                      pod/scraper-548b7ddb9f-jssgw                    Readiness probe failed: dial tcp 10.244.0.129:50053: connect: connection refused
+33m         Warning   Unhealthy                      pod/flask-app-5886b89967-4zgfn                  Liveness probe failed: Get "http://10.244.0.127:5000/health": dial tcp 10.244.0.127:5000: connect: connection refused
+33m         Warning   Unhealthy                      pod/flask-app-5886b89967-s5sgc                  Readiness probe failed: Get "http://10.244.0.130:5000/health": dial tcp 10.244.0.130:5000: connect: connection refused
+33m         Warning   Unhealthy                      pod/relevance-scorer-cd555d678-gww9t            Readiness probe failed: dial tcp 10.244.0.133:50052: connect: connection refused
+33m         Warning   Unhealthy                      pod/mongo-store-7fb479c547-z4bjn                Readiness probe failed: dial tcp 10.244.0.126:50054: connect: connection refused
+33m         Warning   Unhealthy                      pod/scraper-548b7ddb9f-jssgw                    Liveness probe failed: dial tcp 10.244.0.129:50053: connect: connection refused
+32m         Warning   Unhealthy                      pod/flask-app-5886b89967-4zgfn                  Readiness probe failed: Get "http://10.244.0.127:5000/health": dial tcp 10.244.0.127:5000: connect: connection refused
+32m         Warning   Unhealthy                      pod/scraper-548b7ddb9f-jssgw                    Readiness probe failed: dial tcp 10.244.0.129:50053: i/o timeout
+32m         Warning   Unhealthy                      pod/scheduler-6bbf94dcc-8hz2w                   Readiness probe errored and resulted in unknown state: rpc error: code = Unknown desc = container not running (dda21608b9b6386bc49f88eba28ae71557bfaecd346fc905c9d3979916418ac9)
+32m         Warning   Unhealthy                      pod/flask-app-5886b89967-s5sgc                  Readiness probe failed: Get "http://10.244.0.130:5000/health": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+32m         Normal    SandboxChanged                 pod/redis-6d9c5b88d4-zrwlg                      Pod sandbox changed, it will be killed and re-created.
+32m         Normal    SandboxChanged                 pod/relevance-scorer-cd555d678-gww9t            Pod sandbox changed, it will be killed and re-created.
+32m         Normal    SandboxChanged                 pod/mongo-5cddd86795-v4s6n                      Pod sandbox changed, it will be killed and re-created.
+32m         Normal    SandboxChanged                 pod/scraper-548b7ddb9f-jssgw                    Pod sandbox changed, it will be killed and re-created.
+32m         Normal    SandboxChanged                 pod/review-classifier-85c4497458-ljdxf          Pod sandbox changed, it will be killed and re-created.
+32m         Normal    SandboxChanged                 pod/mongo-store-7fb479c547-z4bjn                Pod sandbox changed, it will be killed and re-created.
+32m         Normal    SandboxChanged                 pod/flask-app-5886b89967-s5sgc                  Pod sandbox changed, it will be killed and re-created.
+32m         Normal    SandboxChanged                 pod/scheduler-6bbf94dcc-8hz2w                   Pod sandbox changed, it will be killed and re-created.
+32m         Normal    SandboxChanged                 pod/flask-app-5886b89967-4zgfn                  Pod sandbox changed, it will be killed and re-created.
+32m         Warning   Unhealthy                      pod/flask-app-5886b89967-s5sgc                  Liveness probe failed: Get "http://10.244.0.130:5000/health": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+32m         Warning   Unhealthy                      pod/relevance-scorer-cd555d678-gww9t            Readiness probe failed: dial tcp 10.244.0.133:50052: i/o timeout
+32m         Warning   Unhealthy                      pod/mongo-store-7fb479c547-z4bjn                Readiness probe failed: dial tcp 10.244.0.126:50054: i/o timeout
+32m         Warning   Unhealthy                      pod/mongo-store-7fb479c547-z4bjn                Liveness probe failed: dial tcp 10.244.0.126:50054: i/o timeout
+32m         Normal    Pulling                        pod/flask-app-5886b89967-4zgfn                  Pulling image "caffeinatedkong/flask-app:latest"
+32m         Warning   Unhealthy                      pod/relevance-scorer-cd555d678-gww9t            Liveness probe failed: dial tcp 10.244.0.133:50052: i/o timeout
+32m         Normal    Pulling                        pod/redis-6d9c5b88d4-zrwlg                      Pulling image "redis:latest"
+32m         Normal    Pulling                        pod/scraper-548b7ddb9f-jssgw                    Pulling image "caffeinatedkong/scraper:latest"
+32m         Normal    Pulling                        pod/mongo-store-7fb479c547-z4bjn                Pulling image "caffeinatedkong/mongo-store:latest"
+32m         Normal    Pulled                         pod/mongo-5cddd86795-v4s6n                      Container image "mongo:7" already present on machine
+32m         Normal    Created                        pod/mongo-5cddd86795-v4s6n                      Created container: mongo
+32m         Normal    Pulling                        pod/scheduler-6bbf94dcc-8hz2w                   Pulling image "caffeinatedkong/scheduler:latest"
+32m         Normal    Pulling                        pod/review-classifier-85c4497458-ljdxf          Pulling image "caffeinatedkong/review-classifier:latest"
+32m         Normal    Pulling                        pod/flask-app-5886b89967-s5sgc                  Pulling image "caffeinatedkong/flask-app:latest"
+32m         Normal    Pulled                         pod/relevance-scorer-cd555d678-6tmdr            Successfully pulled image "caffeinatedkong/relevance-scorer:latest" in 5.416s (5.416s including waiting). Image size: 898174856 bytes.
+32m         Normal    Started                        pod/mongo-5cddd86795-v4s6n                      Started container mongo
+32m         Normal    Pulled                         pod/flask-app-5886b89967-4zgfn                  Successfully pulled image "caffeinatedkong/flask-app:latest" in 3.314s (7.216s including waiting). Image size: 749810154 bytes.
+32m         Normal    Created                        pod/flask-app-5886b89967-4zgfn                  Created container: flask-app
+32m         Normal    Started                        pod/flask-app-5886b89967-4zgfn                  Started container flask-app
+32m         Normal    Pulled                         pod/redis-6d9c5b88d4-zrwlg                      Successfully pulled image "redis:latest" in 4.075s (11.274s including waiting). Image size: 137229198 bytes.
+32m         Normal    Created                        pod/redis-6d9c5b88d4-zrwlg                      Created container: redis
+32m         Normal    Started                        pod/redis-6d9c5b88d4-zrwlg                      Started container redis
+32m         Normal    Pulled                         pod/relevance-scorer-cd555d678-gww9t            Successfully pulled image "caffeinatedkong/relevance-scorer:latest" in 2.928s (14.126s including waiting). Image size: 898174856 bytes.
+32m         Normal    Created                        pod/scraper-548b7ddb9f-jssgw                    Created container: scraper
+32m         Normal    Pulled                         pod/scraper-548b7ddb9f-jssgw                    Successfully pulled image "caffeinatedkong/scraper:latest" in 2.957s (17.071s including waiting). Image size: 523842750 bytes.
+32m         Normal    Started                        pod/scraper-548b7ddb9f-jssgw                    Started container scraper
+32m         Normal    Pulled                         pod/review-classifier-85c4497458-ljdxf          Successfully pulled image "caffeinatedkong/review-classifier:latest" in 3.006s (18.088s including waiting). Image size: 1872336796 bytes.
+32m         Normal    Created                        pod/review-classifier-85c4497458-ljdxf          Created container: review-classifier
+32m         Normal    Started                        pod/review-classifier-85c4497458-ljdxf          Started container review-classifier
+32m         Normal    Pulled                         pod/scheduler-6bbf94dcc-8hz2w                   Successfully pulled image "caffeinatedkong/scheduler:latest" in 2.985s (20.692s including waiting). Image size: 487939183 bytes.
+32m         Normal    Created                        pod/scheduler-6bbf94dcc-8hz2w                   Created container: scheduler
+32m         Normal    Started                        pod/scheduler-6bbf94dcc-8hz2w                   Started container scheduler
+32m         Normal    Pulled                         pod/flask-app-5886b89967-s5sgc                  Successfully pulled image "caffeinatedkong/flask-app:latest" in 3.336s (23.928s including waiting). Image size: 749810154 bytes.
+32m         Normal    Created                        pod/flask-app-5886b89967-s5sgc                  Created container: flask-app
+32m         Warning   Unhealthy                      pod/scraper-548b7ddb9f-jssgw                    Readiness probe failed: dial tcp 10.244.0.141:50053: connect: connection refused
+32m         Normal    Pulled                         pod/mongo-store-7fb479c547-z4bjn                Successfully pulled image "caffeinatedkong/mongo-store:latest" in 3.206s (27.041s including waiting). Image size: 520025736 bytes.
+32m         Normal    Started                        pod/flask-app-5886b89967-s5sgc                  Started container flask-app
+32m         Normal    Started                        pod/mongo-store-7fb479c547-z4bjn                Started container mongo-store
+32m         Normal    Created                        pod/mongo-store-7fb479c547-z4bjn                Created container: mongo-store
+32m         Warning   Unhealthy                      pod/mongo-store-7fb479c547-z4bjn                Readiness probe failed: dial tcp 10.244.0.149:50054: connect: connection refused
+31m         Normal    SuccessfulCreate               replicaset/flask-app-5886b89967                 Created pod: flask-app-5886b89967-9qtnw
+31m         Normal    ScalingReplicaSet              deployment/relevance-scorer                     Scaled up replica set relevance-scorer-cd555d678 from 2 to 3
+31m         Normal    ScalingReplicaSet              deployment/scraper                              Scaled up replica set scraper-548b7ddb9f from 1 to 2
+31m         Normal    SuccessfulCreate               replicaset/relevance-scorer-cd555d678           Created pod: relevance-scorer-cd555d678-cbbgx
+31m         Normal    SuccessfulRescale              horizontalpodautoscaler/relevance-scorer-hpa    New size: 3; reason: cpu resource utilization (percentage of request) above target
+31m         Normal    SuccessfulCreate               replicaset/scraper-548b7ddb9f                   Created pod: scraper-548b7ddb9f-4j7v6
+31m         Normal    SuccessfulRescale              horizontalpodautoscaler/scraper-hpa             New size: 2; reason: cpu resource utilization (percentage of request) above target
+31m         Normal    Killing                        pod/relevance-scorer-cd555d678-gww9t            Container relevance-scorer failed liveness probe, will be restarted
+31m         Normal    ScalingReplicaSet              deployment/relevance-scorer                     Scaled down replica set relevance-scorer-cd555d678 from 3 to 1
+31m         Warning   Unhealthy                      pod/relevance-scorer-cd555d678-gww9t            Liveness probe failed: dial tcp 10.244.0.140:50052: connect: connection refused
+31m         Normal    SuccessfulDelete               replicaset/relevance-scorer-cd555d678           Deleted pod: relevance-scorer-cd555d678-gww9t
+31m         Normal    SuccessfulDelete               replicaset/relevance-scorer-cd555d678           Deleted pod: relevance-scorer-cd555d678-cbbgx
+31m         Normal    SuccessfulDelete               replicaset/scraper-548b7ddb9f                   Deleted pod: scraper-548b7ddb9f-4j7v6
+31m         Normal    ScalingReplicaSet              deployment/scraper                              Scaled down replica set scraper-548b7ddb9f from 2 to 1
+31m         Normal    SuccessfulDelete               replicaset/flask-app-5886b89967                 Deleted pod: flask-app-5886b89967-9qtnw
+31m         Warning   Unhealthy                      pod/relevance-scorer-cd555d678-6tmdr            Liveness probe failed: dial tcp 10.244.0.138:50052: connect: connection refused
+31m         Normal    Killing                        pod/relevance-scorer-cd555d678-6tmdr            Container relevance-scorer failed liveness probe, will be restarted
+31m         Normal    ScalingReplicaSet              deployment/flask-app                            Scaled up replica set flask-app-5886b89967 from 2 to 3
+31m         Normal    SuccessfulRescale              horizontalpodautoscaler/flask-app-hpa           New size: 3; reason: cpu resource utilization (percentage of request) above target
+31m         Normal    SuccessfulCreate               replicaset/flask-app-5886b89967                 Created pod: flask-app-5886b89967-g67j6
+31m         Warning   FailedGetResourceMetric        horizontalpodautoscaler/mongo-store-hpa         failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
+31m         Warning   FailedComputeMetricsReplicas   horizontalpodautoscaler/mongo-store-hpa         invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
+31m         Normal    Pulling                        pod/relevance-scorer-cd555d678-gww9t            Pulling image "caffeinatedkong/relevance-scorer:latest"
+31m         Normal    Pulled                         pod/relevance-scorer-cd555d678-gww9t            Successfully pulled image "caffeinatedkong/relevance-scorer:latest" in 2.639s (2.639s including waiting). Image size: 898174856 bytes.
+31m         Normal    Created                        pod/relevance-scorer-cd555d678-gww9t            Created container: relevance-scorer
+31m         Normal    Started                        pod/relevance-scorer-cd555d678-gww9t            Started container relevance-scorer
+31m         Normal    Killing                        pod/relevance-scorer-cd555d678-gww9t            Stopping container relevance-scorer
+31m         Normal    Pulling                        pod/relevance-scorer-cd555d678-6tmdr            Pulling image "caffeinatedkong/relevance-scorer:latest"
+31m         Normal    Sync                           ingress/fraud-buster-ingress                    Scheduled for sync
+31m         Normal    Created                        pod/relevance-scorer-cd555d678-6tmdr            Created container: relevance-scorer
+31m         Normal    Pulled                         pod/relevance-scorer-cd555d678-6tmdr            Successfully pulled image "caffeinatedkong/relevance-scorer:latest" in 2.449s (2.449s including waiting). Image size: 898174856 bytes.
+31m         Normal    Started                        pod/relevance-scorer-cd555d678-6tmdr            Started container relevance-scorer
+31m         Warning   Unhealthy                      pod/relevance-scorer-cd555d678-gww9t            Readiness probe failed: dial tcp 10.244.0.140:50052: connect: connection refused
+31m         Warning   Unhealthy                      pod/relevance-scorer-cd555d678-6tmdr            Readiness probe failed: dial tcp 10.244.0.138:50052: connect: connection refused
+30m         Normal    Pulling                        pod/flask-app-5886b89967-g67j6                  Pulling image "caffeinatedkong/flask-app:latest"
+30m         Normal    Pulled                         pod/flask-app-5886b89967-g67j6                  Successfully pulled image "caffeinatedkong/flask-app:latest" in 2.494s (2.494s including waiting). Image size: 749810154 bytes.
+30m         Normal    Started                        pod/flask-app-5886b89967-g67j6                  Started container flask-app
+30m         Normal    Created                        pod/flask-app-5886b89967-g67j6                  Created container: flask-app
+30m         Warning   FailedGetResourceMetric        horizontalpodautoscaler/relevance-scorer-hpa    failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
+30m         Warning   FailedComputeMetricsReplicas   horizontalpodautoscaler/relevance-scorer-hpa    invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
+29m         Warning   FailedComputeMetricsReplicas   horizontalpodautoscaler/relevance-scorer-hpa    invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: did not receive metrics for targeted pods (pods might be unready)
+29m         Warning   FailedGetResourceMetric        horizontalpodautoscaler/relevance-scorer-hpa    failed to get cpu utilization: did not receive metrics for targeted pods (pods might be unready)
+28m         Normal    Killing                        pod/flask-app-5886b89967-g67j6                  Stopping container flask-app
+28m         Normal    ScalingReplicaSet              deployment/flask-app                            Scaled down replica set flask-app-5886b89967 from 3 to 2
+28m         Normal    SuccessfulRescale              horizontalpodautoscaler/flask-app-hpa           New size: 2; reason: All metrics below target
+28m         Normal    SuccessfulDelete               replicaset/flask-app-5886b89967                 Deleted pod: flask-app-5886b89967-g67j6
+2m12s       Normal    SuccessfulCreate               replicaset/flask-app-5886b89967                 Created pod: flask-app-5886b89967-m48x2
+2m12s       Normal    ScalingReplicaSet              deployment/mongo-store                          Scaled up replica set mongo-store-7fb479c547 from 1 to 2
+2m12s       Normal    SuccessfulCreate               replicaset/flask-app-5886b89967                 Created pod: flask-app-5886b89967-gs9rc
+2m12s       Normal    ScalingReplicaSet              deployment/flask-app                            Scaled up replica set flask-app-5886b89967 from 2 to 4
+2m12s       Normal    SuccessfulRescale              horizontalpodautoscaler/mongo-store-hpa         New size: 2; reason: cpu resource utilization (percentage of request) above target
+2m12s       Normal    SuccessfulRescale              horizontalpodautoscaler/flask-app-hpa           New size: 4; reason: cpu resource utilization (percentage of request) above target
+2m12s       Normal    SuccessfulCreate               replicaset/mongo-store-7fb479c547               Created pod: mongo-store-7fb479c547-4t94z
+2m8s        Normal    Pulling                        pod/flask-app-5886b89967-gs9rc                  Pulling image "caffeinatedkong/flask-app:latest"
+2m5s        Normal    Created                        pod/flask-app-5886b89967-gs9rc                  Created container: flask-app
+2m5s        Normal    Pulled                         pod/flask-app-5886b89967-gs9rc                  Successfully pulled image "caffeinatedkong/flask-app:latest" in 2.914s (2.914s including waiting). Image size: 749810154 bytes.
+2m4s        Normal    Started                        pod/flask-app-5886b89967-gs9rc                  Started container flask-app
+102s        Normal    SuccessfulCreate               replicaset/flask-app-5886b89967                 Created pod: flask-app-5886b89967-zz5lt
+102s        Normal    SuccessfulCreate               replicaset/flask-app-5886b89967                 Created pod: flask-app-5886b89967-kc2nn
+102s        Normal    SuccessfulCreate               replicaset/flask-app-5886b89967                 Created pod: flask-app-5886b89967-vdv68
+102s        Normal    SuccessfulCreate               replicaset/flask-app-5886b89967                 Created pod: flask-app-5886b89967-vsfhc
+102s        Normal    SuccessfulRescale              horizontalpodautoscaler/flask-app-hpa           New size: 8; reason: cpu resource utilization (percentage of request) above target
+102s        Normal    ScalingReplicaSet              deployment/flask-app                            Scaled up replica set flask-app-5886b89967 from 4 to 8
+12s         Normal    SuccessfulCreate               replicaset/mongo-store-7fb479c547               Created pod: mongo-store-7fb479c547-gtm82
+12s         Normal    SuccessfulRescale              horizontalpodautoscaler/mongo-store-hpa         New size: 3; reason: cpu resource utilization (percentage of request) above target
+12s         Normal    ScalingReplicaSet              deployment/mongo-store                          Scaled up replica set mongo-store-7fb479c547 from 2 to 3
